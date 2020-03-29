@@ -1,3 +1,8 @@
+<?php
+$fp = fopen('lidn.txt', 'w');
+fwrite($fp, 'Cats chase mice');
+fclose($fp);
+?>
 <!DOCTYPE HTML>
 <!--
 	Prologue by HTML5 UP
@@ -12,6 +17,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+		<!--
 	<script>
 		function sendMessage()
 		{
@@ -19,9 +25,10 @@
 			var email = document.getElementById("ema").value;
 		    var message = document.getElementById("mess");
 		
-			message.value = "Thank you";
+			var fs = require('fs');
 		}	
 	</script>
+-->
 		<!-- Header -->
 			<div id="header">
 
@@ -121,7 +128,12 @@
 									"for each book to listen and read that book together. Now i am working on my graduation project in Yerevan State University which is "+
 									"about quantum rings. The work is going in department of Solid State Physics. <br/> Also i always find a few hours to keep track of my health. " +
 									"I love my trainings in fitnes and training rooms. In my students years i was training MMA. Also i love swimming and volleyball. <br/> " +
-									"Above you cam see the technologies or tools i +++ or i have worked with them before. </p>  "
+									"Above you can see the technologies or tools i specialized or i have worked with them before. </p>  "+
+									`
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/skills.png" alt="" /></a>
+									</article>
+									`
 								  } else {
 									x.innerHTML = " ";
 									b.value = "More about";
@@ -192,10 +204,7 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>For questions or suggestions, you can email me or send message to my Facebook, Instagram or LinkedIn pages. </p>
 
 							<form method="post" action="#">
 								<div class="row">
