@@ -36,6 +36,7 @@ app.post('/', function(request, response) {
           if (err) throw err;
           console.log('Saved!');
         });
+	response.redirect('https://serob-hayrapetyan.github.io')
     } 
     else {
 		response.send('Please enter Username and Password!');
